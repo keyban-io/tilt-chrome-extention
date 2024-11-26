@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Tilt Status Monitor",
+    "description": "Affiche l'état de Tilt et permet d'ouvrir sa page web.",
+    "version": "1.0",
+    "permissions": ["storage", "alarms", "activeTab"],
+    "host_permissions": ["http://localhost:10350/*"],
+    "icons": {
+      "16": "icon-default-16.png",
+      "32": "icon-default-32.png",
+      "48": "icon-default-48.png",
+      "128": "icon-default-128.png"
+    },
+    "action": {
+      "default_title": "Tilt Status",
+      "default_icon": {
+        "16": "icon-default-16.png",
+        "32": "icon-default-32.png",
+        "48": "icon-default-48.png",
+        "128": "icon-default-128.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "options_page": "options.html"
+  }
